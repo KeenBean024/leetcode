@@ -27,3 +27,5 @@ class Solution(object):
                             stack.append((r,c-1))
                 value = max(value, shape)
         return value
+
+#Time Complexity O(n)
