@@ -14,15 +14,16 @@ class Solution(object):
         :type root: Node
         :rtype: Node
         """
-        if root:
-            self.connect_2(root.left, root.right)
+        curr, nxt = root, root.left if root else None
+        
+        while curr and nxt:
+            curr.left.next =curr.right
+            if curr.next:
+                curr.right.next = curr.next.left
+            
+            curr = curr.next
+            if not curr:
+                curr=nxt
+                nxt = curr.left
         return root
-    
-    def connect_2(self,l,r):
-        # print(l.val, r.val)
-        if l and r:
-            if l.left:
-                self.connect_2(l.left,l.right)
-                self.connect_2(l.right, r.left)            
-                self.connect_2(r.left,r.right)     
-            l.next = r
+            
