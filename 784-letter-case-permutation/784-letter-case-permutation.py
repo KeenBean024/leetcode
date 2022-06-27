@@ -19,3 +19,6 @@ class Solution(object):
         
         backtrack(s)
         return result
+    
+#Time Complexity O(2^n)
+#Space Complexity O(2^n)
