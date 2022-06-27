@@ -12,3 +12,5 @@ class Solution(object):
                 
         return dp[0]
     
+# T O(N^2)
+# S O(N)
