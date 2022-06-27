@@ -11,3 +11,5 @@ class Solution(object):
             rob2=temp
         
         return max(rob1, rob2)
+    
+# T O(N) S O(1)
