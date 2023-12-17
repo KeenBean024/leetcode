@@ -13,7 +13,6 @@ class Solution(object):
         for key, value in count.items():
             freq[value].append(key)
        
-        print(freq)
         result = []
         index = len(freq)-1
         while k>0:
@@ -23,3 +22,5 @@ class Solution(object):
             index -= 1
         return result
             
+        
+        # Time Complexit O(n)
