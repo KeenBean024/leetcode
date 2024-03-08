@@ -21,3 +21,7 @@ class Solution(object):
             max_area = max(max_area, (index +1 - i)*h)
             
         return max_area
+    
+    
+    # Time Commplexity O(n)
+     # Space Complexity O(n)
